@@ -1,0 +1,36 @@
+html {
+	font-family: monospace;
+	font-size: 16px;
+	color: #E8E9CA;
+}
+
+.thirds {
+	display: inline-block;
+	width: 31%;
+	vertical-align: top;
+}
+
+.active {
+	width: 60%;
+}
+
+.inactive {
+	width: 15%;
+}
+
+.hidden {
+	display: none;
+}
+
+header, article, footer {
+	background-color: #222;
+	border: 1px solid #E8E9CA;
+	padding: 10px;
+	margin: 10px;
+}
+
+main {
+	width: 75%;
+	margin: auto;
+}
+
