@@ -1,0 +1,8 @@
+---
+layout: post
+title: music two
+date:   2018-09-27 11:06:17 -0500
+categories: music
+contentType: music
+---
+can you believe we're already on our second music post

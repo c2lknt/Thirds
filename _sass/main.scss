@@ -1,0 +1,65 @@
+html {
+	font-family: monospace;
+	font-size: 16px;
+	color: #E8E9CA;
+}
+
+.thirds {
+	display: inline-block;
+	width: 31%;
+	vertical-align: top;
+    overflow: hidden;
+}
+
+.active {
+	width: 60%;
+}
+
+.inactive {
+	width: 15%;
+}
+
+.hidden {
+	display: none;
+}
+
+header, article, footer {
+	background-color: #222;
+	border: 1px solid #E8E9CA;
+	margin: 10px;
+}
+header, article {
+	padding: 10px;
+}
+
+main {
+	width: 75%;
+	margin: auto;
+}
+a {
+	color: inherit
+}
+input[type='text'] {
+	border: none;
+	font-family: monospace;
+	font-size: 16px;
+	width: 100%;
+	color: #E8E9CA;
+	background-color: #222;
+	padding: 10px;
+}
+input::placeholder { color: #E8E9CA; }
+.link:hover, .back-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+footer > div {
+	display: inline-block;
+	width: 50%;
+}
+.float-right {
+	float: right;
+}
+.bottom-link {
+	padding: 10px;
+}

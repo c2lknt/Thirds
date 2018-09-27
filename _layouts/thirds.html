@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+    <!-- <link href="assets/css/thirds.css" rel="stylesheet" /> -->
+	<script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/thirds.js"></script>
+    <script src="/search.js"></script>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+	<main>
+		<section class="thirds one-third">
+			<header class="header1">Music</header>
+			<article class="article1 hidden"  id="musicArticle">
+				<ul>
+					{% for post in site.posts %}
+						{% if post.contentType == 'music' %}
+							<li>
+							<h2><span onclick="linker(this)" class="link" data-link="{{ post.url }}">{{ post.title }}</span></h2>
+							<p>{{ post.excerpt }}</p>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</article>
+			<footer class="hidden">
+				<div>
+					<input class="search-input" type="text" name="music" placeholder="Search">
+				</div>
+				<div class="float-right">
+					<span class="link bottom-link float-right" onclick="linker(this)" data-link="{{ about.url }}">
+						About
+					</span>
+				</div>
+			</footer>
+		</section>
+		<section class="thirds two-third">
+			<header class="header2">Fiction</header>
+			<article class="article2 hidden"  id="fictionArticle">
+				<ul>
+					{% for post in site.posts %}
+						{% if post.contentType == 'fiction' %}
+							<li>
+							<h2><span onclick="linker(this)" class="link" data-link="{{ post.url }}">{{ post.title }}</span></h2>
+							<p>{{ post.excerpt }}</p>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</article>
+			<footer class="hidden"><input class="search-input" type="text" name="fiction" placeholder="Search"></footer>
+		</section>
+		<section class="thirds three-third">
+			<header class="header3">Nonfiction</header>
+			<article class="article3 hidden" id="nonfictionArticle">
+				<ul>
+					{% for post in site.posts %}
+						{% if post.contentType == 'nonfiction' %}
+							<li>
+							<h2><span onclick="linker(this)" class="link" data-link="{{ post.url }}">{{ post.title }}</span></h2>
+							<p>{{ post.excerpt }}</p>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</article>
+			<footer class="hidden"><input class="search-input" type="text" name="nonfiction" placeholder="Search"></footer>
+		</section>
+	</main>
+</body>
+</html>
